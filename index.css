@@ -1,0 +1,30 @@
+html, body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#stickyheader
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+}
+
+#stickyfooter
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+}
+
+#content
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
