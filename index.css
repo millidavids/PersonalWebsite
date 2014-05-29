@@ -1,30 +1,48 @@
-html, body
-{
+@keyframes grow { from {width: 0; height: 0;} to {width: auto; height: auto;}}
+
+* {
+  font-family: Impact;
+}
+
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-#stickyheader
-{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  background-color: red;
+#grow_page {
+  width: 0px;
+  height: 0px;
+  background-color: black;
+  animation: grow ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 5s;
 }
 
-#stickyfooter
-{
-  position: fixed;
-  bottom: 0;
+#stickyheader {
+  position: relative;
+  top: 0%;
+  text-align: left;
+  text-indent: 10px;
   width: 100%;
   height: 60px;
-  background-color: red;
+  background-color: #dddddd;
 }
 
-#content
-{
-  padding-top: 60px;
-  padding-bottom: 60px;
+.content {
+  margin-top: 60px;
+}
+
+.fade_to_black {
+  background-color: #dddddd;
+  width: 100px;
+  height: 60px;
+  -webkit-transition: background 2s;
+  -o-transition: background 2s;
+  -moz-transition: background 2s;
+  transition: background 2s;
+}
+.fade_to_black:hover {
+  background: black 700px;
 }
