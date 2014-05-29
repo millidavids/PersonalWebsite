@@ -1,4 +1,3 @@
-@keyframes grow { from {width: 0; height: 0;} to {width: auto; height: auto;}}
 
 * {
   font-family: Impact;
@@ -34,15 +33,3 @@ html, body {
   margin-top: 60px;
 }
 
-.fade_to_black {
-  background-color: #dddddd;
-  width: 100px;
-  height: 60px;
-  -webkit-transition: background 2s;
-  -o-transition: background 2s;
-  -moz-transition: background 2s;
-  transition: background 2s;
-}
-.fade_to_black:hover {
-  background: black 700px;
-}
